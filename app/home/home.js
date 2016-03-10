@@ -24,12 +24,12 @@ var loginObj = $firebaseSimpleLogin(firebaseObj);
             })
             .then(function(user) {
                 //Success callback
-                alert("Authentication successful");
-                console.log('Authentication successful');
+                alert("El Ingreso es Correcto");
+                console.log('Ingreso Bueno');
             }, function(error) {
                 //Failure callback
-                alert("Authentication failure");
-                console.log('Authentication failure');
+                alert("El Ingreso es Incorrecto");
+                console.log('Ingreso Malo');
             });
   }
 }]);

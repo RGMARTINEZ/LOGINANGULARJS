@@ -10,7 +10,7 @@ angular.module('myApp.home', ['ngRoute','firebase'])
 }])
 
 .controller('HomeCtrl', ['$scope','$firebaseSimpleLogin',function($scope,$firebaseSimpleLogin) {
-  var firebaseObj = new Firebase("https://daneprueba.firebaseio.com");
+  var firebaseObj = new Firebase("https://smmclogin.firebaseio.com");
 var loginObj = $firebaseSimpleLogin(firebaseObj);
 
   $scope.user = {};
